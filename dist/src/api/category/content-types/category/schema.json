@@ -1,0 +1,88 @@
+{
+    "kind": "collectionType",
+    "collectionName": "categories",
+    "info": {
+        "singularName": "category",
+        "pluralName": "categories",
+        "displayName": "Category",
+        "description": "Content categories for organization and filtering"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "shortDescription": {
+            "type": "text",
+            "maxLength": 200
+        },
+        "color": {
+            "type": "string",
+            "default": "#3B82F6"
+        },
+        "icon": {
+            "type": "string",
+            "default": "folder"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        },
+        "parentCategory": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::category.category"
+        },
+        "childCategories": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::category.category",
+            "mappedBy": "parentCategory"
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
+        },
+        "isFeatured": {
+            "type": "boolean",
+            "default": false
+        },
+        "seoTitle": {
+            "type": "string",
+            "maxLength": 60
+        },
+        "seoDescription": {
+            "type": "text",
+            "maxLength": 160
+        },
+        "seoKeywords": {
+            "type": "string"
+        },
+        "contentCount": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

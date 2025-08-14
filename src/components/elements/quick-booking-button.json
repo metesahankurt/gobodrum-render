@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_elements_quick_booking_buttons",
+  "info": {
+    "displayName": "Quick Booking Button",
+    "description": "Button for quick booking navigation"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "icon": {
+      "type": "string",
+      "required": false
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-white/10"
+    },
+    "hoverBackgroundColor": {
+      "type": "string",
+      "default": "hover:bg-white/20"
+    }
+  }
+}

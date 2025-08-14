@@ -1,0 +1,360 @@
+{
+  "settings": {
+    "displayName": "Article",
+    "defaultSortBy": "title",
+    "defaultSortOrder": "ASC"
+  },
+  "metadatas": {
+    "title": {
+      "edit": {
+        "label": "Title",
+        "description": "Article title",
+        "placeholder": "Enter article title",
+        "editable": true,
+        "mainField": "title"
+      },
+      "list": {
+        "label": "Title",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "slug": {
+      "edit": {
+        "label": "URL Slug",
+        "description": "URL-friendly version of the title",
+        "placeholder": "auto-generated-from-title",
+        "editable": true
+      },
+      "list": {
+        "label": "Slug",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "routeSection": {
+      "edit": {
+        "label": "Route Section",
+        "description": "Main navigation section",
+        "editable": true
+      },
+      "list": {
+        "label": "Section",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "status": {
+      "edit": {
+        "label": "Status",
+        "description": "Publication status",
+        "editable": true
+      },
+      "list": {
+        "label": "Status",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "articleType": {
+      "edit": {
+        "label": "Article Type",
+        "description": "Type of content",
+        "editable": true
+      },
+      "list": {
+        "label": "Type",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "discoverCategory": {
+      "edit": {
+        "label": "Discover Category",
+        "description": "Category for discover section",
+        "editable": true
+      },
+      "list": {
+        "label": "Discover Category",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "thingsToDoCategory": {
+      "edit": {
+        "label": "Things To Do Category",
+        "description": "Category for things to do section",
+        "editable": true
+      },
+      "list": {
+        "label": "Things To Do",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "stayCategory": {
+      "edit": {
+        "label": "Stay Category",
+        "description": "Category for accommodation section",
+        "editable": true
+      },
+      "list": {
+        "label": "Stay",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "diningCategory": {
+      "edit": {
+        "label": "Dining Category",
+        "description": "Category for dining section",
+        "editable": true
+      },
+      "list": {
+        "label": "Dining",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "shoppingCategory": {
+      "edit": {
+        "label": "Shopping Category",
+        "description": "Category for shopping section",
+        "editable": true
+      },
+      "list": {
+        "label": "Shopping",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "eventsCategory": {
+      "edit": {
+        "label": "Events Category",
+        "description": "Category for events section",
+        "editable": true
+      },
+      "list": {
+        "label": "Events",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "exploreCategory": {
+      "edit": {
+        "label": "Explore Category",
+        "description": "Category for explore section",
+        "editable": true
+      },
+      "list": {
+        "label": "Explore",
+        "searchable": true,
+        "sortable": true
+      }
+    }
+  },
+  "layout": [
+    [
+      {
+        "name": "title",
+        "size": 6
+      },
+      {
+        "name": "slug",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "routeSection",
+        "size": 4
+      },
+      {
+        "name": "status",
+        "size": 4
+      },
+      {
+        "name": "articleType",
+        "size": 4
+      }
+    ],
+    [
+      {
+        "name": "excerpt",
+        "size": 12
+      }
+    ],
+    [
+      {
+        "name": "content",
+        "size": 12
+      }
+    ],
+    [
+      {
+        "name": "featuredImage",
+        "size": 6
+      },
+      {
+        "name": "gallery",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "author",
+        "size": 6
+      },
+      {
+        "name": "publishDate",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "discoverCategory",
+        "size": 4
+      },
+      {
+        "name": "showInDiscoverMenu",
+        "size": 4
+      },
+      {
+        "name": "order",
+        "size": 4
+      }
+    ],
+    [
+      {
+        "name": "thingsToDoCategory",
+        "size": 4
+      },
+      {
+        "name": "stayCategory",
+        "size": 4
+      },
+      {
+        "name": "diningCategory",
+        "size": 4
+      }
+    ],
+    [
+      {
+        "name": "shoppingCategory",
+        "size": 4
+      },
+      {
+        "name": "eventsCategory",
+        "size": 4
+      },
+      {
+        "name": "exploreCategory",
+        "size": 4
+      }
+    ],
+    [
+      {
+        "name": "categories",
+        "size": 6
+      },
+      {
+        "name": "tags",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "isFeatured",
+        "size": 3
+      },
+      {
+        "name": "isSticky",
+        "size": 3
+      },
+      {
+        "name": "isBreaking",
+        "size": 3
+      },
+      {
+        "name": "readingTime",
+        "size": 3
+      }
+    ],
+    [
+      {
+        "name": "viewCount",
+        "size": 3
+      },
+      {
+        "name": "likeCount",
+        "size": 3
+      },
+      {
+        "name": "shareCount",
+        "size": 3
+      },
+      {
+        "name": "commentCount",
+        "size": 3
+      }
+    ],
+    [
+      {
+        "name": "scheduledPublishAt",
+        "size": 12
+      }
+    ],
+    [
+      {
+        "name": "relatedArticles",
+        "size": 12
+      }
+    ],
+    [
+      {
+        "name": "seoTitle",
+        "size": 6
+      },
+      {
+        "name": "seoDescription",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "seoKeywords",
+        "size": 6
+      },
+      {
+        "name": "canonicalUrl",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "socialTitle",
+        "size": 6
+      },
+      {
+        "name": "socialDescription",
+        "size": 6
+      }
+    ],
+    [
+      {
+        "name": "socialImage",
+        "size": 12
+      }
+    ],
+    [
+      {
+        "name": "customCss",
+        "size": 6
+      },
+      {
+        "name": "customJs",
+        "size": 6
+      }
+    ]
+  ]
+}

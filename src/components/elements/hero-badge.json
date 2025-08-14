@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_elements_hero_badges",
+  "info": {
+    "displayName": "Hero Badge",
+    "description": "Badge for hero sections (Blue Flag, certificates, etc.)"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-blue-600/90"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-white"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "border-blue-500"
+    },
+    "badgeType": {
+      "type": "enumeration",
+      "enum": ["certification", "award", "feature", "info"],
+      "default": "certification"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

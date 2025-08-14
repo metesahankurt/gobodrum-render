@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_sections_news_events_sections",
+  "info": {
+    "displayName": "News & Events Section",
+    "description": "Two-column section with heading and news/events cards"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTag": {
+      "type": "string",
+      "default": "Out & About"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Latest news, reviews & events in Bodrum"
+    },
+    "description": {
+      "type": "text",
+      "default": "Stay connected with everything happening in Turkey's most beautiful coastal destination."
+    },
+    "newsCard": {
+      "type": "component",
+      "component": "elements.info-card"
+    },
+    "eventsCard": {
+      "type": "component",
+      "component": "elements.info-card"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-gray-50"
+    },
+    "sectionTagColor": {
+      "type": "string",
+      "default": "text-gray-500"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "text-gray-900"
+    },
+    "descriptionColor": {
+      "type": "string",
+      "default": "text-gray-600"
+    },
+    "paddingY": {
+      "type": "enumeration",
+      "enum": ["py-12", "py-16", "py-20", "py-24"],
+      "default": "py-16"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["stacked", "side-by-side"],
+      "default": "side-by-side"
+    }
+  }
+}

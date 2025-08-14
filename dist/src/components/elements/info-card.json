@@ -1,0 +1,59 @@
+{
+    "collectionName": "components_elements_info_cards",
+    "info": {
+        "displayName": "Info Card",
+        "description": "Information card with title, content and CTA button"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "content": {
+            "type": "richtext",
+            "required": true
+        },
+        "buttonText": {
+            "type": "string",
+            "required": true
+        },
+        "buttonLink": {
+            "type": "string",
+            "required": true
+        },
+        "isExternalLink": {
+            "type": "boolean",
+            "default": false
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "bg-white"
+        },
+        "titleColor": {
+            "type": "string",
+            "default": "text-gray-900"
+        },
+        "contentColor": {
+            "type": "string",
+            "default": "text-gray-600"
+        },
+        "buttonStyle": {
+            "type": "enumeration",
+            "enum": ["primary", "secondary", "outline"],
+            "default": "primary"
+        },
+        "buttonColor": {
+            "type": "string",
+            "default": "bg-gray-900"
+        },
+        "showIcon": {
+            "type": "boolean",
+            "default": true
+        },
+        "icon": {
+            "type": "string",
+            "default": "arrow-right"
+        }
+    }
+}

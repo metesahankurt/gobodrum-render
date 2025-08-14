@@ -1,0 +1,55 @@
+{
+    "collectionName": "components_elements_guide_event_items",
+    "info": {
+        "displayName": "Guide Event Item",
+        "description": "Individual item for guides and events grid"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "excerpt": {
+            "type": "text",
+            "required": true
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": ["images"]
+        },
+        "date": {
+            "type": "date"
+        },
+        "category": {
+            "type": "string",
+            "required": true
+        },
+        "subcategory": {
+            "type": "string"
+        },
+        "link": {
+            "type": "string",
+            "required": true
+        },
+        "isExternalLink": {
+            "type": "boolean",
+            "default": false
+        },
+        "featured": {
+            "type": "boolean",
+            "default": false
+        },
+        "badgeColor": {
+            "type": "enumeration",
+            "enum": ["blue", "emerald", "cyan", "amber", "indigo", "purple", "orange", "rose", "gray"],
+            "default": "blue"
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

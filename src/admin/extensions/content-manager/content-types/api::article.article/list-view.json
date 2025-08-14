@@ -1,0 +1,36 @@
+{
+  "bulkable": true,
+  "filterable": true,
+  "searchable": true,
+  "pageSize": 10,
+  "mainField": "title",
+  "defaultSortBy": "updatedAt",
+  "defaultSortOrder": "DESC",
+  "layout": {
+    "list": [
+      "title",
+      "routeSection",
+      "status",
+      "publishDate",
+      "viewCount",
+      "isFeatured",
+      "showInDiscoverMenu",
+      "updatedAt"
+    ],
+    "editRelations": [
+      "categories",
+      "tags",
+      "author",
+      "relatedArticles"
+    ]
+  },
+  "settings": {
+    "bulkable": true,
+    "filterable": true,
+    "searchable": true,
+    "pageSize": 10,
+    "mainField": "title",
+    "defaultSortBy": "updatedAt",
+    "defaultSortOrder": "DESC"
+  }
+}

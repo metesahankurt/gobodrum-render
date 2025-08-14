@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_filter_options",
+  "info": {
+    "displayName": "Filter Option",
+    "description": "Filter option for filterable sections"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

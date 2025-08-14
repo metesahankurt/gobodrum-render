@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_sections_beach_hero_sections",
+  "info": {
+    "displayName": "Beach Hero Section",
+    "description": "Hero section specifically designed for beach pages"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "distance": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "isBlueFlag": {
+      "type": "boolean",
+      "default": false
+    },
+    "badges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.hero-badge"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Explore Beach Details"
+    },
+    "ctaTargetId": {
+      "type": "string",
+      "default": "beach-content"
+    },
+    "showCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "overlayOpacity": {
+      "type": "decimal",
+      "default": 0.4,
+      "min": 0,
+      "max": 1
+    },
+    "heightClass": {
+      "type": "enumeration",
+      "enum": ["h-[50vh]", "h-[60vh]", "h-[70vh]", "h-[80vh]", "h-screen"],
+      "default": "h-[70vh]"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "text-white"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-white/95"
+    }
+  }
+}

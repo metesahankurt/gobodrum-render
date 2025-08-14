@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_elements_weather_cards",
+  "info": {
+    "displayName": "Weather Card",
+    "description": "Weather information display card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Current Weather in Bodrum"
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-blue-50"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "border-blue-200"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-gray-900"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "text-blue-600"
+    },
+    "showUpdateTime": {
+      "type": "boolean",
+      "default": true
+    },
+    "refreshInterval": {
+      "type": "integer",
+      "default": 600000,
+      "min": 60000,
+      "max": 3600000
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["grid", "horizontal", "vertical"],
+      "default": "grid"
+    },
+    "location": {
+      "type": "string",
+      "default": "Bodrum"
+    },
+    "timezone": {
+      "type": "string",
+      "default": "Europe/Istanbul"
+    }
+  }
+}

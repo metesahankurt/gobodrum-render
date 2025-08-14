@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_sections_explore_grids",
+  "info": {
+    "displayName": "Explore Grid",
+    "description": "Grid section with cards for exploring content"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Explore Bodrum"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.card-item"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-white"
+    },
+    "gridColumns": {
+      "type": "enumeration",
+      "enum": ["1", "2", "3", "4", "5", "6"],
+      "default": "3"
+    },
+    "showViewAllButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "viewAllText": {
+      "type": "string",
+      "default": "View All"
+    },
+    "viewAllLink": {
+      "type": "string"
+    },
+    "cardStyle": {
+      "type": "enumeration",
+      "enum": ["default", "hover-lift", "rounded", "shadow"],
+      "default": "hover-lift"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": ["tight", "normal", "wide"],
+      "default": "normal"
+    },
+    "animation": {
+      "type": "enumeration",
+      "enum": ["none", "fade-in", "slide-up", "stagger"],
+      "default": "fade-in"
+    }
+  }
+}

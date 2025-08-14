@@ -1,0 +1,73 @@
+{
+  "collectionName": "components_sections_guides_events_sections",
+  "info": {
+    "displayName": "Guides & Events Section",
+    "description": "Filterable grid section for guides and events content"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Bodrum Guides & Events"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Expert guides and insider knowledge for the ultimate Bodrum experience"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.guide-event-item"
+    },
+    "filterOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.filter-option"
+    },
+    "showFilters": {
+      "type": "boolean",
+      "default": true
+    },
+    "maxItemsToShow": {
+      "type": "integer",
+      "default": 6,
+      "min": 1,
+      "max": 20
+    },
+    "gridColumns": {
+      "type": "enumeration",
+      "enum": ["1", "2", "3", "4"],
+      "default": "3"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-gray-50"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "text-gray-900"
+    },
+    "subtitleColor": {
+      "type": "string",
+      "default": "text-gray-600"
+    },
+    "showViewAllButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "viewAllText": {
+      "type": "string",
+      "default": "View All Bodrum Guides"
+    },
+    "viewAllLink": {
+      "type": "string",
+      "default": "/guides"
+    },
+    "paddingY": {
+      "type": "enumeration",
+      "enum": ["py-12", "py-16", "py-20", "py-24"],
+      "default": "py-20"
+    }
+  }
+}

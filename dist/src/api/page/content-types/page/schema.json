@@ -1,0 +1,84 @@
+{
+    "kind": "collectionType",
+    "collectionName": "pages",
+    "info": {
+        "singularName": "page",
+        "pluralName": "pages",
+        "displayName": "Page",
+        "description": "Dynamic pages for the website"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": false
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "unique": false
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true,
+            "unique": true
+        },
+        "metaTitle": {
+            "type": "string",
+            "maxLength": 60
+        },
+        "metaDescription": {
+            "type": "text",
+            "maxLength": 160
+        },
+        "metaKeywords": {
+            "type": "string"
+        },
+        "ogTitle": {
+            "type": "string"
+        },
+        "ogDescription": {
+            "type": "text"
+        },
+        "ogImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "components": {
+            "type": "dynamiczone",
+            "components": [
+                "sections.hero-section",
+                "sections.welcome-section",
+                "sections.planning-cards-section",
+                "sections.news-events-section",
+                "sections.guides-events-section",
+                "sections.beach-hero-section",
+                "sections.explore-grid",
+                "elements.weather-card"
+            ],
+            "required": false
+        },
+        "isHomePage": {
+            "type": "boolean",
+            "default": false
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": ["draft", "published", "archived"],
+            "default": "draft"
+        },
+        "publishedAt": {
+            "type": "datetime"
+        },
+        "template": {
+            "type": "string",
+            "default": "default"
+        }
+    }
+}

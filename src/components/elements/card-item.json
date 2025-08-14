@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_elements_card_items",
+  "info": {
+    "displayName": "Card Item",
+    "description": "Individual card for grids and collections"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "link": {
+      "type": "string"
+    },
+    "isExternalLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "badgeColor": {
+      "type": "enumeration",
+      "enum": ["blue", "green", "red", "yellow", "purple", "gray"],
+      "default": "blue"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_elements_text_columns",
+  "info": {
+    "displayName": "Text Column",
+    "description": "Individual text column with rich content support and advanced formatting options"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "fontSize": {
+      "type": "enumeration",
+      "enum": ["text-sm", "text-base", "text-lg", "text-xl", "text-2xl"],
+      "default": "text-lg"
+    },
+    "textAlign": {
+      "type": "enumeration", 
+      "enum": ["text-left", "text-center", "text-right", "text-justify"],
+      "default": "text-left"
+    },
+    "order": {
+      "type": "integer",
+      "default": 1
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "transparent"
+    },
+    "textColor": {
+      "type": "string", 
+      "default": "text-gray-900"
+    },
+    "paddingY": {
+      "type": "enumeration",
+      "enum": ["py-0", "py-2", "py-4", "py-6", "py-8"],
+      "default": "py-4"
+    },
+    "paddingX": {
+      "type": "enumeration",
+      "enum": ["px-0", "px-2", "px-4", "px-6", "px-8"],
+      "default": "px-4"
+    },
+    "borderRadius": {
+      "type": "enumeration",
+      "enum": ["rounded-none", "rounded-sm", "rounded", "rounded-md", "rounded-lg", "rounded-xl"],
+      "default": "rounded-none"
+    },
+    "shadow": {
+      "type": "enumeration",
+      "enum": ["shadow-none", "shadow-sm", "shadow", "shadow-md", "shadow-lg"],
+      "default": "shadow-none"
+    }
+  }
+}

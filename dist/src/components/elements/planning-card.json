@@ -1,0 +1,58 @@
+{
+    "collectionName": "components_elements_planning_cards",
+    "info": {
+        "displayName": "Planning Card",
+        "description": "Individual card for planning activities"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "richtext",
+            "required": true
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": ["images"]
+        },
+        "link": {
+            "type": "string",
+            "required": true
+        },
+        "isExternalLink": {
+            "type": "boolean",
+            "default": false
+        },
+        "order": {
+            "type": "integer",
+            "default": 1
+        },
+        "cardBackgroundColor": {
+            "type": "string",
+            "default": "bg-white"
+        },
+        "titleColor": {
+            "type": "string",
+            "default": "text-black"
+        },
+        "descriptionColor": {
+            "type": "string",
+            "default": "text-gray-600"
+        },
+        "hoverEffect": {
+            "type": "enumeration",
+            "enum": ["none", "lift", "scale", "both"],
+            "default": "both"
+        },
+        "imageHeight": {
+            "type": "enumeration",
+            "enum": ["h-40", "h-48", "h-52", "h-56", "h-64"],
+            "default": "h-48"
+        }
+    }
+}

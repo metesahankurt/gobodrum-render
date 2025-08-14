@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_sections_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": "Main hero section with sliding images and quick booking options"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Bodrum"
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true,
+      "default": "Discover and book the best of Bodrum with the local destination experts"
+    },
+    "heroImages": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "quickBookingOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.quick-booking-button"
+    },
+    "autoSlideInterval": {
+      "type": "integer",
+      "default": 5000,
+      "min": 1000,
+      "max": 10000
+    },
+    "showNavigationArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "showIndicators": {
+      "type": "boolean",
+      "default": true
+    },
+    "showScrollIndicator": {
+      "type": "boolean",
+      "default": true
+    },
+    "darkOverlayOpacity": {
+      "type": "decimal",
+      "default": 0.4,
+      "min": 0,
+      "max": 1
+    },
+    "titleFontSize": {
+      "type": "enumeration",
+      "enum": ["small", "medium", "large", "xl"],
+      "default": "xl"
+    }
+  }
+}

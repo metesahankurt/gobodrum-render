@@ -1,0 +1,68 @@
+{
+    "collectionName": "components_sections_welcome_sections",
+    "info": {
+        "displayName": "Welcome Section",
+        "description": "Welcome/intro section with three-column content layout"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "default": "Welcome to Bodrum"
+        },
+        "subtitle": {
+            "type": "text",
+            "default": "Discover Turkey's premier Mediterranean destination where ancient charm meets modern luxury."
+        },
+        "contentColumns": {
+            "type": "component",
+            "repeatable": true,
+            "component": "elements.text-column",
+            "max": 3,
+            "min": 1
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "bg-gray-50"
+        },
+        "titleColor": {
+            "type": "string",
+            "default": "text-gray-900"
+        },
+        "subtitleColor": {
+            "type": "string",
+            "default": "text-gray-600"
+        },
+        "contentColor": {
+            "type": "string",
+            "default": "text-gray-700"
+        },
+        "showCallToAction": {
+            "type": "boolean",
+            "default": true
+        },
+        "ctaText": {
+            "type": "string",
+            "default": "Discover Bodrum"
+        },
+        "ctaLink": {
+            "type": "string",
+            "default": "#"
+        },
+        "ctaIsExternal": {
+            "type": "boolean",
+            "default": false
+        },
+        "paddingY": {
+            "type": "enumeration",
+            "enum": ["py-10", "py-16", "py-20", "py-24"],
+            "default": "py-20"
+        },
+        "layout": {
+            "type": "enumeration",
+            "enum": ["single", "two-column", "three-column"],
+            "default": "three-column"
+        }
+    }
+}

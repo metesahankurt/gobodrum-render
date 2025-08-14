@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_sections_planning_cards_sections",
+  "info": {
+    "displayName": "Planning Cards Section",
+    "description": "Horizontal scrollable cards section for planning activities"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Start Planning"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.planning-card"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "backgroundPattern": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "patternSize": {
+      "type": "string",
+      "default": "160px 160px"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "text-white"
+    },
+    "showScrollButtons": {
+      "type": "boolean",
+      "default": true
+    },
+    "showMobileSwipeIndicator": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSeeAllButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "seeAllText": {
+      "type": "string",
+      "default": "See all experiences"
+    },
+    "seeAllLink": {
+      "type": "string",
+      "default": "/experiences"
+    },
+    "cardWidth": {
+      "type": "enumeration",
+      "enum": ["w-64", "w-72", "w-80", "w-96"],
+      "default": "w-80"
+    },
+    "paddingY": {
+      "type": "enumeration",
+      "enum": ["py-12", "py-16", "py-20", "py-24"],
+      "default": "py-16"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+    "kind": "collectionType",
+    "collectionName": "hotels",
+    "info": {
+        "singularName": "hotel",
+        "pluralName": "hotels",
+        "displayName": "Hotel",
+        "description": "Hotel and accommodation listings"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        },
+        "description": {
+            "type": "richtext",
+            "required": true
+        },
+        "shortDescription": {
+            "type": "text",
+            "maxLength": 200
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": ["images"],
+            "required": true
+        },
+        "featuredImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        },
+        "location": {
+            "type": "json"
+        },
+        "address": {
+            "type": "text",
+            "required": true
+        },
+        "coordinates": {
+            "type": "json"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "email"
+        },
+        "website": {
+            "type": "string"
+        },
+        "bookingUrl": {
+            "type": "string"
+        },
+        "starRating": {
+            "type": "integer",
+            "min": 1,
+            "max": 5
+        },
+        "priceRange": {
+            "type": "enumeration",
+            "enum": ["budget", "mid-range", "luxury", "ultra-luxury"],
+            "required": true
+        },
+        "priceFrom": {
+            "type": "decimal"
+        },
+        "priceTo": {
+            "type": "decimal"
+        },
+        "currency": {
+            "type": "string",
+            "default": "TRY"
+        },
+        "hotelType": {
+            "type": "enumeration",
+            "enum": ["hotel", "resort", "boutique", "villa", "apartment", "hostel", "pension"],
+            "default": "hotel"
+        },
+        "amenities": {
+            "type": "json"
+        },
+        "roomTypes": {
+            "type": "json"
+        },
+        "policies": {
+            "type": "richtext"
+        },
+        "checkInTime": {
+            "type": "string"
+        },
+        "checkOutTime": {
+            "type": "string"
+        },
+        "categories": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::category.category"
+        },
+        "tags": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::tag.tag"
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
+        },
+        "isFeatured": {
+            "type": "boolean",
+            "default": false
+        },
+        "isVerified": {
+            "type": "boolean",
+            "default": false
+        },
+        "averageRating": {
+            "type": "decimal",
+            "default": 0,
+            "min": 0,
+            "max": 5
+        },
+        "totalReviews": {
+            "type": "integer",
+            "default": 0
+        },
+        "viewCount": {
+            "type": "integer",
+            "default": 0
+        },
+        "bookingCount": {
+            "type": "integer",
+            "default": 0
+        },
+        "seasonalPricing": {
+            "type": "json"
+        },
+        "availability": {
+            "type": "json"
+        },
+        "seoTitle": {
+            "type": "string",
+            "maxLength": 60
+        },
+        "seoDescription": {
+            "type": "text",
+            "maxLength": 160
+        },
+        "seoKeywords": {
+            "type": "string"
+        },
+        "socialImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}
